@@ -3,6 +3,7 @@ import styled from './index.module.scss';
 import { ReactComponent as IconPhysical } from './svg/icon-physical.svg';
 import { ReactComponent as IconJuridical } from './svg/icon-juridical.svg';
 import { ReactComponent as IconHeritage } from './svg/icon-heritage.svg';
+import { Link } from 'react-router-dom';
 
 function HomeLayout() {
     return (
@@ -24,7 +25,7 @@ function HomeLayout() {
                     </h3>
 
                     <div className={styled.homelayout__buttons}>
-                        <button>
+                        <Link to='/physical'>
                             <div className={styled.homelayout__icon}>
                                 <IconPhysical />
                             </div>
@@ -33,9 +34,9 @@ function HomeLayout() {
                             <p className={styled.homelayout__text}>
                                 Физическим лицам
                             </p>
-                        </button>
+                        </Link>
 
-                        <button>
+                        <Link to='/juridical'>
 
                             <div className={styled.homelayout__icon}>
                                 <IconJuridical />
@@ -45,9 +46,9 @@ function HomeLayout() {
                             <p className={styled.homelayout__text}>
                                 Юридическим лицам
                             </p>
-                        </button>
+                        </Link>
 
-                        <button>
+                        <Link to='/heritage'>
 
                             <div className={styled.homelayout__icon}>
                                 <IconHeritage />
@@ -57,7 +58,7 @@ function HomeLayout() {
                             <p className={styled.homelayout__text}>
                                 Наследство
                             </p>
-                        </button>
+                        </Link>
                     </div>
 
 

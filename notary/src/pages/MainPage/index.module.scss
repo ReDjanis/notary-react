@@ -2,7 +2,7 @@
   max-width: 100vw;
   min-height: 100vh;
   display: grid;
-  grid-template-rows: auto 1fr 120px;
+  grid-template-rows: auto 1fr auto;
 
   &__header {
     background-color: rgb(255, 255, 255);
@@ -13,11 +13,7 @@
 
   &__main {
     // background-color: rgb(44, 94, 146);
-    background-image: url(../../../public/images/backgound.jpg);
-    background-size: cover;
-    background-position: center center;
-    // width: 100%;
-    
+    background-color: rgb(10 58 109);
   }
 
   &__footer {

@@ -3,6 +3,7 @@ import styled from './index.module.scss';
 import Header from './components/Header';
 import HomeLayout from "./components/HomeLayout";
 import Footer from "./components/Footer";
+import { Outlet } from 'react-router-dom';
 
 function MainPage() {
     return (
@@ -14,12 +15,15 @@ function MainPage() {
         </header>
   
         <main className={styled.wrapper__main}>
-          {/* <Outlet /> */}
-          <HomeLayout />
+
+          <Outlet />
+
         </main>
   
         <footer className={styled.wrapper__footer}>
+
           <Footer />
+          
         </footer>
   
       </div>

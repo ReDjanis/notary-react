@@ -1,7 +1,11 @@
 import React from 'react';
 import styled from './index.module.scss';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
+
+    const setActive = ({ isActive }) => isActive ? styled.header__active : styled.header__pending;
+
     return (
         <div className={styled.header}>
             <div className={styled.header__info}>
@@ -25,12 +29,21 @@ function Header() {
             </div>
 
             <div className={styled.header__buttons}>
-                <button className={styled.header__btn}>
-                    Главная
-                </button>
-                <button className={styled.header__btn}>
-                    Контакты
-                </button>
+
+                    <NavLink
+                        to='/'
+                        className={setActive}
+                    >
+                        Главная
+                    </NavLink>
+
+                    <NavLink
+                        to='/contacts'
+                        className={setActive}
+                    >
+                        Контакты
+                    </NavLink>
+                    
             </div>
         </div>
     );
