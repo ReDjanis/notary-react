@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/notary-react/notary/static/css/main.2598abe7.css",
+    "main.js": "/notary-react/notary/static/js/main.1bccd743.js",
+    "static/js/787.944f9e2c.chunk.js": "/notary-react/notary/static/js/787.944f9e2c.chunk.js",
+    "static/media/backgound.jpg": "/notary-react/notary/static/media/backgound.8792fe920829303ba08b.jpg",
+    "static/media/NotoSans.ttf": "/notary-react/notary/static/media/NotoSans.8d51b8ea12add61490f7.ttf",
+    "static/media/NotoSerif-Bold.ttf": "/notary-react/notary/static/media/NotoSerif-Bold.f85b511552a0efa170f5.ttf",
+    "static/media/NotoSerif.ttf": "/notary-react/notary/static/media/NotoSerif.2aa84b00e2a73a772754.ttf",
+    "static/media/NotoSerif-Italic.ttf": "/notary-react/notary/static/media/NotoSerif-Italic.5cf4c438ba559f2703d5.ttf",
+    "static/media/NotoSans.woff": "/notary-react/notary/static/media/NotoSans.6b93a83904aa55c70c05.woff",
+    "static/media/NotoSerif-Bold.woff": "/notary-react/notary/static/media/NotoSerif-Bold.e606bb59368e40865b56.woff",
+    "static/media/NotoSerif.woff": "/notary-react/notary/static/media/NotoSerif.e533291b63ae2330656d.woff",
+    "static/media/NotoSerif-Italic.woff": "/notary-react/notary/static/media/NotoSerif-Italic.850dd17cb99bfc082009.woff",
+    "static/media/NotoSerif-Bold.woff2": "/notary-react/notary/static/media/NotoSerif-Bold.f191904f3dbbdb64d58e.woff2",
+    "static/media/NotoSans.woff2": "/notary-react/notary/static/media/NotoSans.4bcbd9ed90a493e5910e.woff2",
+    "static/media/NotoSerif.woff2": "/notary-react/notary/static/media/NotoSerif.fa4e3c4110704408523b.woff2",
+    "static/media/NotoSerif-Italic.woff2": "/notary-react/notary/static/media/NotoSerif-Italic.975c771e5f09a7dd38a8.woff2",
+    "static/media/background-contacts.png": "/notary-react/notary/static/media/background-contacts.d7d61961d29aa4550bc6.png",
+    "static/media/background-juridical.png": "/notary-react/notary/static/media/background-juridical.59fcd47dc4eee26cb66a.png",
+    "static/media/background-physical.png": "/notary-react/notary/static/media/background-physical.87ae6ff7375e798fd8c3.png",
+    "static/media/background-heritage-right.png": "/notary-react/notary/static/media/background-heritage-right.5b8a1b2c829f1be14033.png",
+    "static/media/background-heritage-left.png": "/notary-react/notary/static/media/background-heritage-left.7145caf0346fb2e7786e.png",
+    "static/media/icon-email.svg": "/notary-react/notary/static/media/icon-email.8857e94e08c414cc1ad0fe860e3ded6a.svg",
+    "static/media/icon-underground.svg": "/notary-react/notary/static/media/icon-underground.3a8eed1ffbaf929ffc0d268ef7e40afd.svg",
+    "static/media/icon-physical.svg": "/notary-react/notary/static/media/icon-physical.189598aa1f90c69df133f8a7db4290b1.svg",
+    "static/media/icon-phone.svg": "/notary-react/notary/static/media/icon-phone.2042497d79b8ac69a64fe09d3f6b8d67.svg",
+    "static/media/icon-juridical.svg": "/notary-react/notary/static/media/icon-juridical.0511c5f09b1617a110dd25b997f30496.svg",
+    "static/media/icon-location.svg": "/notary-react/notary/static/media/icon-location.9592c2fc5998fa281bb5cd7201561e24.svg",
+    "index.html": "/notary-react/notary/index.html",
+    "static/media/icon-heritage.svg": "/notary-react/notary/static/media/icon-heritage.b36b58258f2681287c859e99123dd493.svg",
+    "static/media/icon-info.svg": "/notary-react/notary/static/media/icon-info.393118d0ba9b22b3adc05138ade8920f.svg",
+    "static/media/icon-check-mark.svg": "/notary-react/notary/static/media/icon-check-mark.edba3df6f3474ad8446b.svg",
+    "static/media/icon-exclamation-mark.svg": "/notary-react/notary/static/media/icon-exclamation-mark.4591ad35039064bccd6e2cc040a7ebc6.svg",
+    "main.2598abe7.css.map": "/notary-react/notary/static/css/main.2598abe7.css.map",
+    "main.1bccd743.js.map": "/notary-react/notary/static/js/main.1bccd743.js.map",
+    "787.944f9e2c.chunk.js.map": "/notary-react/notary/static/js/787.944f9e2c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2598abe7.css",
+    "static/js/main.1bccd743.js"
+  ]
+}
