@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import '../src/style/reset.scss';
 import '../src/style/style.scss';
@@ -9,10 +9,8 @@ import PhysicalPerson from './pages/MainPage/components/PhysicalPerson';
 import JuridicalPerson from './pages/MainPage/components/JuridicalPerson';
 import Heritage from './pages/MainPage/components/Heritage';
 
-
-
-
 function App() {
+
   return (
     <BrowserRouter>
       <Routes>
@@ -23,13 +21,8 @@ function App() {
           <Route path='heritage' element={<Heritage />} />
           <Route path='contacts' element={<Contacts />} />
         </Route>
-        
       </Routes>
     </BrowserRouter>
-
-
-
-
   );
 }
 

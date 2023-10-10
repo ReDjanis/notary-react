@@ -3,34 +3,42 @@ import styled from './index.module.scss';
 import Header from './components/Header';
 import HomeLayout from "./components/HomeLayout";
 import Footer from "./components/Footer";
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 function MainPage() {
-    return (
-      <div className={styled.wrapper}>
-        <header className={styled.wrapper__header}>
-            
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname]);
+
+  return (
+    <div className={styled.wrapper}>
+      <header className={styled.wrapper__header}>
+        <div className={styled.wrapper__header_body}> 
+
           <Header />
-         
-        </header>
-  
-        <main className={styled.wrapper__main}>
 
-          <Outlet />
+        </div>
+      </header>
 
-        </main>
-  
-        <footer className={styled.wrapper__footer}>
+      <main className={styled.wrapper__main}>
 
-          <Footer />
-          
-        </footer>
-  
-      </div>
-  
-  
-  
-    );
-  }
-  
-  export default MainPage;
+        <Outlet />
+
+      </main>
+
+      <footer className={styled.wrapper__footer}>
+
+        <Footer />
+
+      </footer>
+
+    </div>
+
+  );
+}
+
+export default MainPage;

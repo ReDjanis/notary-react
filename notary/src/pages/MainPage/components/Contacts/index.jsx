@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from './index.module.scss';
 import { ReactComponent as IconLocation } from './svg/icon-location.svg';
 import { ReactComponent as IconUnderground } from './svg/icon-underground.svg';
 import { ReactComponent as IconPhone } from './svg/icon-phone.svg';
 import { ReactComponent as IconMail } from './svg/icon-email.svg';
 import { ReactComponent as IconInfo } from './svg/icon-info.svg';
+import { Link } from 'react-router-dom';
+import Maps from '../../../../components/Map';
 
 
 function Contacts() {
@@ -64,7 +66,9 @@ function Contacts() {
                                     Телефон:
                                 </p>
                                 <p className={styled.contacts__text}>
-                                    8 (499) 785-03-45
+                                    <Link to="tel:84997850345">
+                                        8 (499) 785-03-45
+                                    </Link>
                                 </p>
                             </div>
 
@@ -106,9 +110,9 @@ function Contacts() {
 
                         </div>
                     </div>
-                    <div className={styled.contacts__map}>
-                        {/* <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A005f359698ac1baabdedbbf2d177110c53508d70d1c3c64911512273c36ba50d&amp;width=690&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script> */}
-                    </div>
+
+                    <Maps />
+                    
                 </div>
             </div>
 

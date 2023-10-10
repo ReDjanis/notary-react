@@ -3,7 +3,7 @@ import styled from './index.module.scss';
 import { ReactComponent as IconPhysical } from './svg/icon-physical.svg';
 import { ReactComponent as IconJuridical } from './svg/icon-juridical.svg';
 import { ReactComponent as IconHeritage } from './svg/icon-heritage.svg';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function HomeLayout() {
     return (
@@ -72,17 +72,17 @@ function HomeLayout() {
 
                     <div className={styled.homelayout__items}>
 
-                        <a href="" className={styled.homelayout__link}>
+                        <Link to="https://www.gosuslugi.ru/" target="_blank" className={styled.homelayout__link}>
                                 <img src="/images/link-gosuslugi.png" alt="ссылка на сайт госуслуги" />
-                        </a>
+                        </Link>
 
-                        <a href="" className={styled.homelayout__link}>
+                        <Link to="https://www.nalog.gov.ru/rn77/" target="_blank" className={styled.homelayout__link}>
                             <img src="/images/link-fns.jpg" alt="ссылка на сайт федеральной налоговой службы" />
-                        </a>
+                        </Link>
 
-                        <a href="" className={styled.homelayout__link}>
+                        <Link to="https://rosreestr.gov.ru/" target="_blank" className={styled.homelayout__link}>
                             <img src="/images/link-rosreestr.jpg" alt="ссылка на сайт росреестра" />
-                        </a>
+                        </Link>
 
                     </div>
 

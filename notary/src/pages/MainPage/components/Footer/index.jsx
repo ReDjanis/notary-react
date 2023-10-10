@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from './index.module.scss';
 import { Link, NavLink } from 'react-router-dom';
 import { ReactComponent as IconLocation } from './svg/icon-location.svg';
 import { ReactComponent as IconPhone } from './svg/icon-phone.svg';
+import Modal from '../../../../components/Modal';
 
 function Footer() {
 
     const setActive = ({ isActive }) => isActive ? styled.footer__active : styled.footer__pending;
+    const [activeModal, setActiveModal] = useState(false);
+
+    const handleBtn = () => {
+        setActiveModal(true);
+    }
 
     return (
         <div className={styled.footer}>
@@ -55,19 +61,24 @@ function Footer() {
                     8 (499) 785-03-45
                 </Link>
 
-                <div className={styled.footer__info}>
+                <button className={styled.footer__info} onClick={handleBtn}>
                     <div className={styled.footer__icon}>
                         <IconLocation />
                     </div>
-
                     Москва, ул. Щербаковская, д. 35
-                </div>
+                </button>
 
             </div>
 
             <div className={styled.footer__rights}>
-                Copyright © 2023 Мокробородова Елена Генриховна
+                Copyright © {new Date().getFullYear()} Мокробородова Елена Генриховна
             </div>
+
+            <Modal
+                active={activeModal}
+                setActive={setActiveModal}
+            />
+
         </div>
     );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from './index.module.scss';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 function Header() {
 
@@ -10,14 +10,14 @@ function Header() {
         <div className={styled.header}>
             <div className={styled.header__info}>
 
-                <div className={styled.header__img}>
+                <Link to="/" className={styled.header__img}>
                     <div className={styled.header__wrp}>
                         <img src="/images/icon-logo.png" alt="иконка сайта" />
                     </div>
-                </div>
+                </Link>
 
 
-                <div className={styled.header__title}>
+                <Link to="/" className={styled.header__title}>
                     <h1>
                         Мокробородова Елена Генриховна
                     </h1>
@@ -25,7 +25,7 @@ function Header() {
                     <h3>
                         Сайт нотариуса города Москвы
                     </h3>
-                </div>
+                </Link>
             </div>
 
             <div className={styled.header__buttons}>

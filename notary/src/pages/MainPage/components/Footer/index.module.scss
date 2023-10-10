@@ -17,13 +17,23 @@
             display: flex;
             flex-wrap: wrap;
             padding-bottom: 10px;
-            border-bottom: 1px solid rgb(242, 242, 242);
+            border-bottom: 0.5px solid rgb(242, 242, 242);
+        }
+
+        button {
+            background: none;
+            cursor: pointer;
+            text-align: left;
         }
     }
 
     a {
         text-decoration: none;
         margin-right: 18px;
+
+        &:hover {
+            color: rgba(244, 123, 50, 1);
+        }
     }
 
     &__active {
@@ -38,9 +48,10 @@
         display: flex;
         align-items: center;
         column-gap: 10px;
-        height: 30px;
+        min-height: 30px;
         padding-top: 10px;
         color: rgb(242, 242, 242);
+        line-height: 22px;
 
         &:hover {
             color: rgba(244, 123, 50, 1);
