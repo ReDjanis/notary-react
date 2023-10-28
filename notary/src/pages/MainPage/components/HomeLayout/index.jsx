@@ -3,11 +3,11 @@ import styled from './index.module.scss';
 import { ReactComponent as IconPhysical } from './svg/icon-physical.svg';
 import { ReactComponent as IconJuridical } from './svg/icon-juridical.svg';
 import { ReactComponent as IconHeritage } from './svg/icon-heritage.svg';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function HomeLayout() {
     return (
-        <div className={styled.homelayout}>
+        <main className={styled.homelayout}>
 
             <div className={styled.homelayout__title}>
                 <h2>
@@ -25,42 +25,34 @@ function HomeLayout() {
                     </h3>
 
                     <div className={styled.homelayout__buttons}>
+
                         <Link to='/physical'>
                             <div className={styled.homelayout__icon}>
                                 <IconPhysical />
                             </div>
-
-
                             <p className={styled.homelayout__text}>
                                 Физическим лицам
                             </p>
                         </Link>
 
                         <Link to='/juridical'>
-
                             <div className={styled.homelayout__icon}>
                                 <IconJuridical />
                             </div>
-
-
                             <p className={styled.homelayout__text}>
                                 Юридическим лицам
                             </p>
                         </Link>
 
                         <Link to='/heritage'>
-
                             <div className={styled.homelayout__icon}>
                                 <IconHeritage />
                             </div>
-
-
                             <p className={styled.homelayout__text}>
                                 Наследство
                             </p>
                         </Link>
                     </div>
-
 
                 </div>
 
@@ -70,7 +62,7 @@ function HomeLayout() {
                         Полезные ссылки
                     </h3>
 
-                    <div className={styled.homelayout__items}>
+                    <div className={styled["homelayout__links-wrp"]}>
 
                         <Link to="https://www.gosuslugi.ru/" target="_blank" className={styled.homelayout__link}>
                                 <img src="/images/link-gosuslugi.png" alt="ссылка на сайт госуслуги" />
@@ -90,7 +82,7 @@ function HomeLayout() {
 
             </div>
 
-        </div>
+        </main>
     );
 }
 
