@@ -7,28 +7,29 @@ function Header() {
     const setActive = ({ isActive }) => isActive ? styled.header__active : styled.header__pending;
 
     return (
-        <div className={styled.header}>
-            <div className={styled.header__info}>
+        <header className={styled.header}>
+            <div className={styled.header__content}>
+                <div className={styled.header__info}>
 
-                <Link to="/" className={styled.header__img}>
-                    <div className={styled.header__wrp}>
-                        <img src="/images/icon-logo.png" alt="иконка сайта" />
-                    </div>
-                </Link>
+                    <Link to="/" className={styled.header__logo}>
+                        <div className={styled["header__logo-wrp"]}>
+                            <img src="/images/icon-logo.png" alt="иконка сайта" />
+                        </div>
+                    </Link>
 
 
-                <Link to="/" className={styled.header__title}>
-                    <h1>
-                        Мокробородова Елена Генриховна
-                    </h1>
+                    <Link to="/" className={styled.header__title}>
+                        <h1>
+                            Мокробородова Елена Генриховна
+                        </h1>
 
-                    <h3>
-                        Сайт нотариуса города Москвы
-                    </h3>
-                </Link>
-            </div>
+                        <h3>
+                            Сайт нотариуса города Москвы
+                        </h3>
+                    </Link>
+                </div>
 
-            <div className={styled.header__buttons}>
+                <div className={styled.header__buttons}>
 
                     <NavLink
                         to='/'
@@ -43,9 +44,10 @@ function Header() {
                     >
                         Контакты
                     </NavLink>
-                    
+
+                </div>
             </div>
-        </div>
+        </header>
     );
 }
 

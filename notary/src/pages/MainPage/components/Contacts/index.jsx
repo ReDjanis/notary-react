@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import styled from './index.module.scss';
 import { ReactComponent as IconLocation } from './svg/icon-location.svg';
 import { ReactComponent as IconUnderground } from './svg/icon-underground.svg';
@@ -21,7 +20,7 @@ function Contacts() {
                 </div>
 
                 <div className={styled.contacts__content}>
-                    <div className={styled.contacts__info}>
+                    <div className={styled.contacts__items}>
 
                         <div className={styled.contacts__item}>
 

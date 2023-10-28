@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import '../src/style/reset.scss';
 import '../src/style/style.scss';
@@ -10,6 +9,8 @@ import JuridicalPerson from './pages/MainPage/components/JuridicalPerson';
 import Heritage from './pages/MainPage/components/Heritage';
 
 function App() {
+  const root = document.querySelector('#root');
+  root.style.height = '100%';
 
   return (
     <BrowserRouter>
