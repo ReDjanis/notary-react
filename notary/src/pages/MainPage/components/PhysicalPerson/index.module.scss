@@ -1,0 +1,123 @@
+.physical {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    background: rgb(10 58 109) url(../../../../../public/images/background-physical.png) repeat-x bottom;
+    display: flex;
+    justify-content: center;
+
+    &__wrapper {
+        max-width: 1200px;
+        min-width: 280px;
+        width: 100%;
+        margin: 30px 0px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        color: rgb(57, 58, 59);
+        padding: 30px 10px;
+        overflow: hidden;
+
+        @media screen and (min-width: 800px) {
+            padding: 30px 40px;
+        }
+    }
+
+    ul {
+        font-size: calc((100vw - 350px)/(1200 - 350)*(18 - 16) + 16px);
+        line-height: calc((100vw - 350px)/(1200 - 350)*(40 - 28) + 28px);
+
+        @media screen and (min-width: 1200px) {
+            font-size: 18px;
+            line-height: 40px;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 50px;
+
+        h3 {
+            font-size: calc((100vw - 350px)/(1200 - 350)*(32 - 26) + 26px);
+            line-height: calc((100vw - 350px)/(1200 - 350)*(42 - 35) + 35px);
+            margin-bottom: 8px;
+
+            @media screen and (min-width: 1200px) {
+                font-size: 32px;
+                line-height: 42px;
+            }
+        }
+    }
+
+    &__services {
+        border-bottom: 2px solid rgb(0, 36, 73);
+
+        ul {
+
+            li {
+                padding-left: 5px;
+                min-height: 40px;
+            }
+
+            li:before {
+                content: url(./svg/icon-check-mark.svg)' ';
+            }
+
+            li:not(:last-child) {
+                border-bottom: 1px solid rgb(0, 36, 73);
+            }
+
+            li:last-child {
+                padding-bottom: 40px;
+            }
+        }
+    }
+
+    &__subtitle {
+        padding: 20px 0px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+
+        h4 {
+            font-size: calc((100vw - 350px)/(1200 - 350)*(18 - 16) + 16px);
+            line-height: calc((100vw - 350px)/(1200 - 350)*(30 - 28) + 28px);
+            margin-bottom: 8px;
+
+            @media screen and (min-width: 1200px) {
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+    }
+
+    &__important {
+        ul {
+            padding: 0px 20px;
+            list-style-type: disc;
+            line-height: 25px;
+
+            li:last-child {
+                ul {
+                    list-style-type: circle;
+                    padding: 10px 20px;
+
+
+                    li {
+                        font-family: 'NotoSerif-Italic';
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    &__info {
+        font-family: 'NotoSerif-Bold';
+        font-size: 16px;
+        line-height: 25px;
+        padding-top: 20px;
+    }
+
+}
