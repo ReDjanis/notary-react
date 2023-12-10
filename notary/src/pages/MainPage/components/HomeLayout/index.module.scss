@@ -16,12 +16,13 @@
         padding: 10px;
 
         h2 {
-            font-size: calc((100vw - 350px)/(1200 - 350)*(25 - 20) + 20px);
-            line-height: calc((100vw - 350px)/(1200 - 350)*(29 - 24) + 24px);
+            font-size: calc((100vw - 350px)/(1200 - 350)*(24 - 20) + 20px);
+            line-height: calc((100vw - 350px)/(1200 - 350)*(28 - 24) + 24px);
+            letter-spacing: 2px;
 
             @media screen and (min-width: 900px) {
-                font-size: 25px;
-                line-height: 29px;
+                font-size: 24px;
+                line-height: 28px;
             }
         }
     }
@@ -47,6 +48,7 @@
             font-size: calc((100vw - 350px)/(1200 - 350)*(22 - 18) + 18px);
             line-height: calc((100vw - 350px)/(1200 - 350)*(26 - 22) + 22px);
             padding-bottom: 60px;
+            letter-spacing: 1.5px;
 
             @media screen and (min-width: 1200px) {
                 font-size: 22px;
@@ -149,6 +151,7 @@
             line-height: calc((100vw - 350px)/(1200 - 350)*(24 - 20) + 20px);
             padding: 20px 0 30px;
             border-top: 1px solid rgba(0, 0, 0, 0.9);
+            letter-spacing: 1.5px;
 
             @media screen and (min-width: 1200px) {
                 font-size: 20px;
